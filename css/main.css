@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+*,
+*:before, *:after {
+  box-sizing: inherit; }
+
+*,
+*:hover,
+*:active,
+*:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: none; }
+
+html,
+body {
+  font-family: 'Fira Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  min-height: 100%; }
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%; }
+
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+body {
+  position: relative;
+  background: #f9f9f9; }
+
+a,
+label,
+button {
+  font-family: 'Fira Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+strong {
+  font-weight: 700; }
+
+/* style page */
+main {
+  display: block;
+  width: 100%;
+  max-width: 940px;
+  margin: 3rem auto; }
+
+h1 {
+  display: block;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+  color: #3A3C51;
+  text-align: center; }
+
+.randon-quote-container {
+  display: block;
+  margin: 3rem auto;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(58, 60, 81, 0.2);
+  border-radius: 3px;
+  padding: 1.5rem;
+  *zoom: 1; }
+  .randon-quote-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.randon-quote-text {
+  display: block;
+  position: relative;
+  font-size: 1.375rem;
+  line-height: 2.25rem;
+  text-align: center;
+  padding: 0 3rem;
+  margin-top: 0.75rem;
+  margin-bottom: 3rem; }
+  .randon-quote-text:before, .randon-quote-text:after {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.25rem;
+    content: "\f10d";
+    color: #F44C65; }
+  .randon-quote-text:before {
+    top: -10px;
+    content: "\f10d"; }
+  .randon-quote-text:after {
+    top: 10px;
+    content: "\f10e"; }
+
+.randon-quote-share,
+.randon-quote-button {
+  display: block;
+  float: right; }
+
+.randon-quote-button {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  background: #F44C65;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0rem 1.5rem;
+  height: 3rem;
+  transition: 0.2s; }
+  .randon-quote-button:hover {
+    background: #f55e74; }
+
+.randon-quote-share {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  float: left;
+  margin-top: -0.625rem; }
+
+.share-tt,
+.shade-facebook {
+  display: inline-block;
+  font-size: 2.375rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-right: 0.75rem;
+  color: #F44C65; }
+  .share-tt:hover,
+  .shade-facebook:hover {
+    color: #f55e74; }

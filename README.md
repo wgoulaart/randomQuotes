@@ -1,2 +1,4 @@
 # randomQuotes
-Generate random quotes - Free Code Camp
+Random Quote Machine - FreeCodeCamp
+
+[LiveDemo](http://codepen.io/wgoulaart/pen/YWPLeL); *_not-finally_

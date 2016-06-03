@@ -1,14 +1,18 @@
-// var randonQuoteText = document.querySelector(".randon-quote-text");
-// var btnNewQuote = document.querySelector(".randon-quote-button");
+var url = "http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?"
 
-// bind with js native
-btnNewQuote.addEventListener("click", function(e) {
-  randonQuoteText.innerHTML = quotesJson[Math.floor(Math.random() * 2)];
-  e.preventDefault();
-});
-
-// select with jquery
 $(document).ready(function() {
-  var btnNewQuote = $('.randon-quote-button');
-  console.log(btnNewQuote);
+  function getQuote(jsonReturn) {
+    if ((jsonReturn !== null) && ((jsonReturn.quoteAuthor !== "") || (jsonReturn.quoteAuthor !== ""))) {
+      $(".quote-text").text(jsonReturn.quoteText);
+      $(".random-quote-author").text(jsonReturn.quoteAuthor);
+    } else {
+      $('.random-quote-text').html("No such quote's ");
+    }
+  }
+
+  $(".random-quote-button").on('click', function () {
+    $.getJSON(url, getQuote, 'jsonp');
+  });
+
+  $.getJSON(url, getQuote, 'jsonp');
 });

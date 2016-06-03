@@ -65,16 +65,39 @@ main {
   margin: $margin-base auto;
 }
 
-h1 {
+h1,
+.sub-title {
   display: block;
-  @include adjust-font-size-to(40px);
-  font-weight: 500;
+  @include adjust-font-size-to(50px);
+  font-weight: 700;
   color: $color-main;
   text-align: center;
+  text-shadow: 0 2px 0 shade($color-main,40),
+               2px 3px 0 shade($color-main,40);
 
   &::selection {
     background: $color-main;
     color: $color-love;
+  }
+}
+
+.sub-title {
+  @include adjust-font-size-to(30px);
+  text-shadow: 0 1px 0 shade($color-main,40),
+               1px 2px 0 shade($color-main,40);
+  &:hover {
+    color: $color-love;
+  }
+}
+
+.text-normal {
+  display: block;
+  @include adjust-font-size-to(24px);
+  font-weight: 500;
+  color: $color-love;
+  text-align: center;
+  &:hover {
+    color: $color-main;
   }
 }
 
@@ -105,7 +128,7 @@ h1 {
       background: $color-main;
       color: $color-love;
     }
-    
+
     &:after,
     &:before {
       display: inline-block;
@@ -182,4 +205,15 @@ h1 {
   &:hover {
     color: tint($color-love,10);
   }
+}
+
+h1,
+.random-quote-text,
+.quote-text,
+.random-quote-author,
+.random-quote-share{
+    &::selection {
+      background: $color-main;
+      color: $color-love;
+    }
 }

@@ -86,16 +86,36 @@ main {
   max-width: 940px;
   margin: 3rem auto; }
 
-h1 {
+h1,
+.sub-title {
   display: block;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  font-weight: 700;
   color: #3A3C51;
-  text-align: center; }
-  h1::selection {
+  text-align: center;
+  text-shadow: 0 2px 0 #232431, 2px 3px 0 #232431; }
+  h1::selection,
+  .sub-title::selection {
     background: #3A3C51;
     color: #F44C65; }
+
+.sub-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-shadow: 0 1px 0 #232431, 1px 2px 0 #232431; }
+  .sub-title:hover {
+    color: #F44C65; }
+
+.text-normal {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  color: #F44C65;
+  text-align: center; }
+  .text-normal:hover {
+    color: #3A3C51; }
 
 .random-quote-container {
   display: block;
@@ -185,3 +205,11 @@ h1 {
   vertical-align: middle; }
   .share-tt:hover {
     color: #f55e74; }
+
+h1::selection,
+.random-quote-text::selection,
+.quote-text::selection,
+.random-quote-author::selection,
+.random-quote-share::selection {
+  background: #3A3C51;
+  color: #F44C65; }
